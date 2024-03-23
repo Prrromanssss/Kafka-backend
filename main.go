@@ -43,7 +43,7 @@ func (op *OrderPlacer) placeOrder(orderType string, size int) error {
 
 	<-op.deliveryCh
 
-	fmt.Printf("placed order on the queue: %s\n", format)
+	fmt.Printf("placed order on the partition: %s\n", format)
 
 	return nil
 }

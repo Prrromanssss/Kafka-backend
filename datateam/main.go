@@ -11,7 +11,7 @@ func main() {
 	topic := "HVSE"
 	consumer, err := kafka.NewConsumer(&kafka.ConfigMap{
 		"bootstrap.servers": "localhost:9092",
-		"group.id":          "foo",
+		"group.id":          "foo_data",
 		"auto.offset.reset": "smallest",
 	})
 	if err != nil {
